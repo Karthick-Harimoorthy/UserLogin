@@ -72,12 +72,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="admin_productivity_data.aspx" />
     <Content Include="assets\app\app.calendar.js" />
-    <Content Include="assets\css\sandc.css" />
-    <Content Include="assets\css\sandc.min.css" />
-    <Content Include="assets\css\sandc.min.rtl.css" />
-    <Content Include="assets\css\sandc.rtl.css" />
     <Content Include="assets\GreenLogo.svg" />
     <Content Include="assets\img\back_btn.png" />
     <Content Include="assets\img\delete.png" />
@@ -165,8 +160,6 @@
     <Content Include="assets\img\user\u8.jpg" />
     <Content Include="assets\img\user\Untitled-1.jpg" />
     <Content Include="assets\img\user\user.png" />
-    <Content Include="assets\js\sandc.bundle.js" />
-    <Content Include="assets\js\sandc.bundle.min.js" />
     <Content Include="assets\plugins\bootstrap\css\bootstrap-grid.css" />
     <Content Include="assets\plugins\bootstrap\css\bootstrap-grid.min.css" />
     <Content Include="assets\plugins\bootstrap\css\bootstrap-reboot.css" />
@@ -1136,7 +1129,6 @@
     <Content Include="assets\plugins\Toast\sweetalert.min.css" />
     <Content Include="assets\plugins\Toast\sweetalert.min.js" />
     <Content Include="assets\result.svg" />
-    <Content Include="assets\SandC.ico" />
     <Content Include="css\jquery-ui-1.8.5.custom.css" />
     <Content Include="css\jquery.datetimepicker.css" />
     <Content Include="css\jquery.multiselect.css" />
@@ -1163,110 +1155,6 @@
     <Content Include="css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
     <Content Include="css\ui-lightness\jquery-ui-1.10.3.custom.css" />
     <Content Include="css\ui-lightness\jquery-ui-1.10.3.custom.min.css" />
-    <Content Include="images\add.png" />
-    <Content Include="images\arrow.png" />
-    <Content Include="images\black.jpg" />
-    <Content Include="images\btn_bg.jpg" />
-    <Content Include="images\btn_binning.JPG" />
-    <Content Include="images\btn_binning.png" />
-    <Content Include="images\btn_cancel.png" />
-    <Content Include="images\btn_clear.png" />
-    <Content Include="images\btn_close.png" />
-    <Content Include="images\btn_deliver.png" />
-    <Content Include="images\btn_done.png" />
-    <Content Include="images\btn_login.png" />
-    <Content Include="images\btn_material.png" />
-    <Content Include="images\btn_mom_switchboard.png" />
-    <Content Include="images\btn_next.png" />
-    <Content Include="images\btn_no.PNG" />
-    <Content Include="images\btn_operator_notes.JPG" />
-    <Content Include="images\btn_operator_notes.png" />
-    <Content Include="images\btn_previous.png" />
-    <Content Include="images\btn_print.png" />
-    <Content Include="images\btn_save.png" />
-    <Content Include="images\btn_search.png" />
-    <Content Include="images\btn_settings.png" />
-    <Content Include="images\btn_shift_work.png" />
-    <Content Include="images\btn_sign_out.png" />
-    <Content Include="images\btn_submit.png" />
-    <Content Include="images\btn_switchboard.png" />
-    <Content Include="images\btn_update.png" />
-    <Content Include="images\btn_upload.png" />
-    <Content Include="images\btn_wc_logo.png" />
-    <Content Include="images\btn_yes.PNG" />
-    <Content Include="images\buttonall.png" />
-    <Content Include="images\button_ack.png" />
-    <Content Include="images\button_add.png" />
-    <Content Include="images\button_all.png" />
-    <Content Include="images\button_binning-info.png" />
-    <Content Include="images\button_cancel.png" />
-    <Content Include="images\button_change_limit.png" />
-    <Content Include="images\button_clear.png" />
-    <Content Include="images\button_click-to-add-new-student.png" />
-    <Content Include="images\button_close.png" />
-    <Content Include="images\button_complete-job.png" />
-    <Content Include="images\button_fail.png" />
-    <Content Include="images\button_group_by.png" />
-    <Content Include="images\button_materials-reqiured-for-job.png" />
-    <Content Include="images\button_move-job.png" />
-    <Content Include="images\button_nest.png" />
-    <Content Include="images\button_open.png" />
-    <Content Include="images\button_operator-notes.png" />
-    <Content Include="images\button_pass.png" />
-    <Content Include="images\button_remove.png" />
-    <Content Include="images\button_request_empty_container.png" />
-    <Content Include="images\button_save.png" />
-    <Content Include="images\button_send.png" />
-    <Content Include="images\button_show-all.png" />
-    <Content Include="images\button_submit.png" />
-    <Content Include="images\button_view-drawing.png" />
-    <Content Include="images\capacity_tracker.png" />
-    <Content Include="images\capacity_tracker_logo.png" />
-    <Content Include="images\close.PNG" />
-    <Content Include="images\close_job.PNG" />
-    <Content Include="images\complete_job.PNG" />
-    <Content Include="images\cyan-blue-round-play-button.png" />
-    <Content Include="images\delete.jpg" />
-    <Content Include="images\details_icon.png" />
-    <Content Include="images\flash.gif" />
-    <Content Include="images\gray-round-play-button.png" />
-    <Content Include="images\green round.jpg" />
-    <Content Include="images\green-round-play-button.png" />
-    <Content Include="images\ico_add_edit.png" />
-    <Content Include="images\ico_lookup.png" />
-    <Content Include="images\ico_report.png" />
-    <Content Include="images\ico_team_admin.png" />
-    <Content Include="images\if_017_395155.png" />
-    <Content Include="images\link.png" />
-    <Content Include="images\link_img.jpg" />
-    <Content Include="images\loading.gif" />
-    <Content Include="images\logo_capacity_tracker.png" />
-    <Content Include="images\logo_mom.png" />
-    <Content Include="images\move_job.JPG" />
-    <Content Include="images\move_job.PNG" />
-    <Content Include="images\new_btn_bg.png" />
-    <Content Include="images\new_btn_login.png" />
-    <Content Include="images\project_lbl_black.png" />
-    <Content Include="images\project_lbl_white.png" />
-    <Content Include="images\quit_btn.png" />
-    <Content Include="images\red-round-play-button.png" />
-    <Content Include="images\red.jpg" />
-    <Content Include="images\reset.jpg" />
-    <Content Include="images\sandc_logo-tagline.jpg" />
-    <Content Include="images\sandc_logo.jpg" />
-    <Content Include="images\save.jpg" />
-    <Content Include="images\save.PNG" />
-    <Content Include="images\schedular.jpg" />
-    <Content Include="images\schedular_new.jpg" />
-    <Content Include="images\submit.png" />
-    <Content Include="images\TOM-Logo.png" />
-    <Content Include="images\update.png" />
-    <Content Include="images\white-round-play-button.png" />
-    <Content Include="images\white.jpg" />
-    <Content Include="images\x.gif" />
-    <Content Include="images\x.png" />
-    <Content Include="images\x_over.png" />
-    <Content Include="images\yellow-round-play-button.png" />
     <Content Include="JqgridView.aspx" />
     <Content Include="js\jquery-1.4.2.min.js" />
     <Content Include="js\jquery-1.6.2.min.js" />
@@ -1294,13 +1182,6 @@
     <Content Include="UserDetails.asmx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="admin_productivity_data.aspx.cs">
-      <DependentUpon>admin_productivity_data.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="admin_productivity_data.aspx.designer.cs">
-      <DependentUpon>admin_productivity_data.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Code\App_Helper.cs" />
     <Compile Include="App_Code\Cookies_Helper.cs" />
     <Compile Include="App_Code\DB.cs" />
@@ -1342,10 +1223,7 @@
     <Compile Include="UserDetails.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="images\Thumbs.db" />
-    <Content Include="assets\css\sandc.css.map" />
     <Content Include="assets\data\search.json" />
-    <Content Include="assets\js\sandc.bundle.js.map" />
     <Content Include="assets\plugins\bootstrap\css\bootstrap-grid.css.map" />
     <Content Include="assets\plugins\bootstrap\css\bootstrap-grid.min.css.map" />
     <Content Include="assets\plugins\bootstrap\css\bootstrap-reboot.css.map" />
