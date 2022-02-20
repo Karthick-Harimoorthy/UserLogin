@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>User Login</title>
+    <script src="JavaScript1.js"></script>
+    <script src="UserLogin.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://unpkg.com/sweetalert2@7.8.2/dist/sweetalert2.all.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        function showDiv() {
+            document.getElementById('Loginpage').style.display = "block";
+        }
+    </script>
+    <style>
+        #navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #ff5349;
+        }
+
+        .navbar-text {
+            color: white;
+            text-align: center;
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="navbar">
+        <h3 class="navbar-text"> Home Page</h3>
+    </div>
+
+    <!--Hompage Buttons-->
+
+    <div id="Hompagebtn" class="col-md-12">
+        <div class="col-md-6">
+            <div class="col-md-2">
+                <br />
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#useradd">&nbsp;&nbsp;ADD&nbsp;&nbsp;</button>
+            </div>
+            <div class="col-md-2">
+                <br />
+                <button id="DispEmailText" class="btn btn-success" type="button" onclick="showDiv()">
+                    &nbsp;EDIT&nbsp;
+                </button>
+            </div>
+
+            <div class="col-md-2">
+                <br />
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#userdelete">DELETE</button>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    &nbsp; &nbsp; &nbsp;<button type="button" id="DispDataTbl" class="btn btn-info" onclick="window.location.href = '/jqgridView.aspx';">Data Table</button>
+
+    &nbsp; &nbsp; &nbsp;<button type="button" id="DispTblCell" class="btn btn-info" onclick="window.location.href = '/Tablecell.aspx';">Table Cell</button>
+    <!--User edit or Popup Html For edit Button-->
+
+    <div id="Loginpage" style="display:none" onclick="showDiv()">
+        <div class="col-md-12">
+            <div class="col-md-8">
+                <br />
+                <br />
+                <div class="col-md-4">
+                    Email:<input id="Emailid" name="Email">
+                </div>
+                <div class="col-md-3">
+
+                    <button type="button" class="btn btn-success" data-toggle="modal" id="Login">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--User Registration or Popup Html For Add Button-->
+
+    <div class="modal fade" id="useradd" tabindex="-1" role="dialog" aria-labelledby="useraddLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div style="background-color:aqua" class="modal-header">
+                    <div class="col-md-12">
+                        <h3>&nbsp;&nbsp;User Registration</h3>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <br />
+                        <p>Enter Your First Name</p>
+                        <input id="Firstname" name="First Name" />
+                    </div>
+                    <div class="col-md-6">
+                        <br />
+                        <p>Enter Your Last Name</p>
+                        <input id="Lastname" name="Last Name" />
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <br />
+                        <p>Enter Your Email ID</p>
+                        <input id="Email" name="Email" />
+                    </div>
+                    <div class="col-md-6">
+                        <br />
+                        <p>Enter your Qualification</p>
+                        <input id="Qualification" name="Qualification" />
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <br />
+                        <p>Enter Your Phone Number</p>
+                        <input id="PhNo" name="Phno" />
+                    </div>
+                    <div class="col-md-6">
+                        <br />
+                        <p>Enter Your Country</p>
+                        <input id="Country" name="Country" />
+                    </div>
+
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <br />
+                        <p>Enter your State</p>
+                        <input id="State" name="state" />
+                    </div>
+
+                    <div class="col-md-6">
+                        <br />
+                        <p>Enter your City</p>
+                        <input id="City" name="City" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-md-12">
+                        <br />
+                        <button type="button" class="btn btn-primary" id="Submit">Submit</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Popup Html For after click submit button for edit user details data-toggle="modal" data-target="#useredit" -->
+
+    <div id="EditUser">
+        <div class="modal fade" id="useredit" tabindex="-1" role="dialog" aria-labelledby="usereditLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div style="background-color:aqua" class="modal-header">
+                        <h4 class="modal-title" id="usereditLabel">Edit Profile</h4>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                            <br />
+                            <p>Your First Name</p>
+                            <input id="Firstname1" name="First Name" />
+                        </div>
+                        <div class="col-md-6">
+                            <br />
+                            <p>Your Last Name</p>
+                            <input id="Lastname1" name="Last Name" />
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                            <br />
+                            <p>Your Email ID</p>
+                            <input id="Email1" name="Email" />
+                        </div>
+                        <div class="col-md-6">
+                            <br />
+                            <p>Your Qualification</p>
+                            <input id="Qualification1" name="Qualification" />
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                            <br />
+                            <p>Your Phone Number</p>
+                            <input id="PhNoedit" name="Phno" />
+                        </div>
+                        <div class="col-md-6">
+                            <br />
+                            <p>Your Country</p>
+                            <input id="Countryedit" name="Country" />
+                        </div>
+
+                    </div>
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                            <br />
+                            <p>your State</p>
+                            <input id="Stateedit" name="state" />
+                        </div>
+
+                        <div class="col-md-6">
+                            <br />
+                            <p>your City</p>
+                            <input id="Cityedit" name="City" />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="col-md-12">
+                            <br />
+                            <button type="button" class="btn btn-primary" id="Update">Update</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Popup Html For Delete Button Button-->
+
+    <div class="modal fade" id="userdelete" tabindex="-1" role="dialog" aria-labelledby="userdeleteLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div style="background-color:aqua" class="modal-header">
+                    <div class="col-md-12">
+                        <h3>&nbsp;&nbsp;Delete Account</h3>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <br />
+                        <p>Enter Your Email ID</p>
+                        <input id="Emailid1" name="Email" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-danger" id="Delete">Delete</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
